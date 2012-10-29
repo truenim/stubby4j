@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>stubby4j by azagniotov</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>stubby4j</h1>
+        <p>HTTP stub server written in Java with embedded Jetty</p>
+
+        <p class="view"><a href="https://github.com/azagniotov/stubby4j">View the Project on GitHub <small>azagniotov/stubby4j</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/azagniotov/stubby4j/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/azagniotov/stubby4j/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/azagniotov/stubby4j">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><a href="http://travis-ci.org/azagniotov/stubby4j"><img src="https://secure.travis-ci.org/azagniotov/stubby4j.png?branch=master" alt="Build Status"></a></p>
+
+<h1>stubby4j</h1>
+
+<p>A stub HTTP server written in Java with embedded Jetty server   </p>
+
+<h5>Why the word "stubby"?</h5>
+
+<p>It is a stub HTTP server after all, hence the "stubby". Also, in Australian slang "stubby" means <em>beer bottle</em></p>
+
+<h2>Why would a developer use stubby4j?</h2>
+
+<h4>You want to:</h4>
+
+<ul>
+<li>Simulate responses from real server and don't care (or cannot) to go over the network</li>
+<li>Verify that your code makes HTTP requests with all the required parameters and/or headers</li>
+<li>Verify that your code correctly handles HTTP error codes</li>
+<li>You want to trigger response from the server based on the request parameters over HTTP or HTTPS</li>
+<li>Support for any of the available HTTP methods</li>
+<li>Simulate support for Basic Authorization</li>
+<li>Support for HTTP 30x redirects</li>
+<li>Trigger multiple responses based on multiple requests on the same URI</li>
+<li>Configure stub data using configuration file</li>
+<li>Configure stub data at runtime, without restarting the server by making a POST to an exposed endpoint</li>
+<li>Provide canned answers in your contract/integration tests</li>
+<li>Enable delayed responses for performance and stability testing</li>
+<li>Avoid to spend time coding for the above requirements</li>
+<li>Concentrate on the task at hand</li>
+</ul><h2>Why would a QA use stubby4j?</h2>
+
+<ul>
+<li>Specifiable mock responses to simulate page conditions without real data.</li>
+<li>Easily swappable data config files to run different data sets and responses.</li>
+<li>All-in-one stub server to handle mock data with less need to upkeep code for test generation</li>
+</ul><h6>All this goodness in just under 1.5MB</h6>
+
+<h2>Dependencies</h2>
+
+<p>stubby4j is a fat JAR (for the skinny JAR, please look under <code>artifacts</code>), which contains the following dependencies:</p>
+
+<ul>
+<li>jetty-server-8.1.1.v20120215.jar</li>
+<li>javax.servlet-3.0.0.v201112011016.jar</li>
+<li>jetty-continuation-8.1.1.v20120215.jar</li>
+<li>jetty-http-8.1.1.v20120215.jar</li>
+<li>jetty-io-8.1.1.v20120215.jar</li>
+<li>jetty-util-8.1.1.v20120215.jar</li>
+<li>commons-cli-1.2.jar</li>
+<li>commons-codec-1.5.jar</li>
+<li>snakeyaml-1.11.jar</li>
+</ul><p><strong>stubby4j is also compatible with Jetty 7.x.x and servlet API v2.5</strong></p>
+
+<h2>Documentation</h2>
+
+<p>See <code>docs</code> directory for:</p>
+
+<ul>
+<li><a href="https://github.com/azagniotov/stubby4j/blob/master/docs/BUILDING.md">Build Instructions</a></li>
+<li><a href="https://github.com/azagniotov/stubby4j/blob/master/docs/COMMAND-LINE-USAGE.md">Commandline Usage</a></li>
+<li><a href="https://github.com/azagniotov/stubby4j/blob/master/docs/CODE-EXAMPLES.md">Code Examples</a></li>
+<li><a href="https://github.com/azagniotov/stubby4j/blob/master/docs/YAML.md">YAML Sample</a></li>
+</ul><h2>Artifacts</h2>
+
+<p>See <code>artifacts</code> directory for the following stubby4j JARs:</p>
+
+<ul>
+<li>Fat</li>
+<li>Skinny</li>
+<li>Sources</li>
+<li>Javadocs</li>
+</ul><h2>Authors</h2>
+
+<p>See AUTHORS.md for details.</p>
+
+<h2>Kudos</h2>
+
+<p>See THANKS.md for details.</p>
+
+<h2>See Also</h2>
+
+<p><strong><a href="https://github.com/Afmrak/stubby4node">stubby4node</a>:</strong> A NodeJS implementation of stubby4j</p>
+
+<h2>Copyright</h2>
+
+<p>See COPYRIGHT for details.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/azagniotov">azagniotov</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
