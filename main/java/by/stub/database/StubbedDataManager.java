@@ -98,6 +98,18 @@ public class StubbedDataManager {
             ANSITerminal.error(String.format("Could not record from %s: %s", recordingSource, e.toString()));
          }
       }
+
+      if (stubResponse.getHeaders().containsKey("X-Proxy-From")) {
+         final String fullUrl = stubResponse.getHeaders().get("X-Proxy-From") + assertingLifecycle.getRequest().getUrl();
+         ANSITerminal.info(String.format("Proxy from %s", fullUrl));
+         try {
+            final StubbyResponse stubbyResponse = stubbyHttpTransport.getResponse("GET", fullUrl, null, assertingLifecycle.getRequest().getHeaders(), 0);
+            ReflectionUtils.injectObjectFields(stubResponse, YamlProperties.BODY, stubbyResponse.getContent());
+         } catch (Exception e) {
+            ANSITerminal.error(String.format("Could not proxy from %s: %s", fullUrl, e.toString()));
+         }
+      }
+
       return stubResponse;
    }
 
